@@ -1,0 +1,22 @@
+#ifndef MANAGER_VIEW_IMPL_H
+#define MANAGER_VIEW_IMPL_H
+
+#include "manager_view.h"
+#include "manager_ctrl.h"
+#include "service_view.h"
+
+class ManagerViewImpl : public ManagerView
+{
+	ManagerCtrl* mgrCtrl;
+	ServiceView* srcView;
+public:
+	ManagerViewImpl(void);
+	~ManagerViewImpl(void);
+	void loginManager(void);
+	void loginService(void);
+	void menuMgr(void);
+	void delMgr(void);
+	void listMgr(void);
+	void addMgr(void);
+};
+#endif
